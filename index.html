@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="media.css" media="(max-width: 991px)" />
+    <script
+      src="https://kit.fontawesome.com/7b5fb2de65.js"
+      crossorigin="anonymous"
+      async
+    ></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <title>Alonso Novoa / Full Stack Developer</title>
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="container">
+        <div class="navbar__logo">
+          <p class="navbar__title">
+            <a href="#">AN</a>
+          </p>
+        </div>
+        <div class="navbar__menu">
+          <i class="fas fa-bars"></i>
+        </div>
+        <ul class="navbar__links">
+          <li class="navbar__link active" data-ref="home">
+            <a href="#home">Inicio</a>
+          </li>
+          <li class="navbar__link" data-ref="about">
+            <a href="#about">Sobre mí</a>
+          </li>
+          <li class="navbar__link" data-ref="portfolio">
+            <a href="#portfolio">Portafolio</a>
+          </li>
+          <li class="navbar__link" data-ref="contact">
+            <a href="#contact">Contacto</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <section id="home" class="home">
+      <div class="home__background"></div>
+      <picture>
+        <source type="image/jpeg" srcset="./assets/profile.jpg" />
+        <img class="home__profile" alt="picture profile" />
+      </picture>
+      <div class="home__description">
+        <span class="home__title--primary">¡Hola!</span>
+        <h1 class="home__title">Soy Alonso Novoa</h1>
+        <span class="home__title--secondary">Desarrollador Full Stack</span>
+      </div>
+    </section>
+    <section id="about">
+      <div class="container">
+        <h2 class="section__title">Sobre mí</h2>
+        <div class="about__grid">
+          <div class="about__description">
+            <h2>Soy Alonso Novoa</h2>
+            <p>
+              Soy Fullstack Web Developer, técnico en Desarrollo de Software y estudiante de Ingeniería de Sistemas. Estoy en constante aprendizaje, me considero un autodidacta que disfruta de ver a los proyectos hacerse una realidad.
+            </p>
+
+            <a
+              class="button--cta"
+              href="./assets/CV Alonso Novoa.pdf"
+              download="CV Alonso Novoa"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i class="fas fa-file-download"></i>Descargar CV
+            </a>
+          </div>
+          <div class="about__skills">
+            <div class="skill__title">
+              <h2>Mis habilidades</h2>
+            </div>
+            <div class="skill__item">
+              <img src="/assets/android.svg" alt="Android"/>
+              <div class="skill__name">Android</div>
+            </div>
+            <div class="skill__item">
+              <img src="/assets/flutter.svg" alt="Flutter"/>
+              <div class="skill__name">Flutter</div>
+            </div>
+            <div class="skill__item">
+              <img src="/assets/angular.svg" alt="Angular"/>
+              <div class="skill__name">Angular</div>
+            </div>
+            <div class="skill__item">
+              <img src="/assets/vue.svg" alt="VueJS"/>
+              <div class="skill__name">VueJS</div>
+            </div>
+            <div class="skill__item">
+              <img src="/assets/laravel.svg" alt="Laravel"/>
+              <div class="skill__name">Laravel</div>
+            </div>
+            <div class="skill__item">
+              <img src="/assets/nodejs.svg" alt="NodeJS"/>
+              <div class="skill__name">NodeJS</div>
+            </div>
+            <div class="skill__item">
+              <img src="/assets/git.svg" alt="GIT"/>
+              <div class="skill__name">GIT</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="portfolio">
+      <div class="container">
+        <h2 class="section__title">Portafolio</h2>
+        <h3 class="section__subtitle">Aquí puedes ver los proyectos en los que he trabajado.</h3>
+        <div class="portfolio__grid">
+
+          <div class="portfolio__item">
+            <picture>
+              <source type="image/jpeg" srcset="./projects/elconde-barbershop.png" />
+              <img class="portfolio__img" alt="portfolio item" />
+            </picture>
+            <div class="portfolio__description">
+              <h3 class="portfolio__description--title">El Conde Barbershop</h3>
+              <p class="portfolio__description--text">
+                Aplicación web hecha en Angular y Laravel como API restful. Reserva de citas, generación de reportes, gestión de clientes, ganancias, gastos y almacén.
+              </p>
+              <!-- <div class="buttons__container">
+                <a
+                  class="button"
+                  href="#"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <i class="fas fa-globe-americas"></i> Demo
+                </a>
+                <a
+                  class="button"
+                  href="#"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <i class="fab fa-github"></i> Repositorio
+                </a>
+              </div> -->
+            </div>
+          </div>
+
+          <div class="portfolio__item">
+            <picture>
+              <source type="image/jpeg" srcset="./projects/izipay.png" />
+              <img class="portfolio__img" alt="portfolio item" />
+            </picture>
+            <div class="portfolio__description">
+              <h3 class="portfolio__description--title">PuntoDventa Izipay</h3>
+              <p class="portfolio__description--text">
+                Aplicación web multisede desarrollada en HTML, CSS, Javascript y PHP puro. Gestión de ventas, estado de productos, dashboard, productividad de ejecutivos de ventas y generación de reportes.
+              </p>
+              <!-- <div class="buttons__container">
+                <a
+                  class="button"
+                  href="#"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <i class="fas fa-globe-americas"></i> Demo
+                </a>
+                <a
+                  class="button"
+                  href="#"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <i class="fab fa-github"></i> Repositorio
+                </a>
+              </div> -->
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="container">
+        <h2 class="section__title">Contacto</h2>
+        <h3 class="section__subtitle">
+          Contáctame si quieres que trabajemos juntos.
+        </h3>
+        <div class="contact__grid">
+          <a
+            href="mailto:aisaacnsoto@gmail.com"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <div class="contact__item">
+
+              <i class="far fa-envelope"></i>
+              <p>Envíame un email</p>
+            </div>
+          </a>
+          <a
+            href="https://github.com/aisaacnsoto"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <div class="contact__item">
+              <i class="fab fa-github"></i>
+              <p>Sígueme</p>
+            </div>
+          </a>
+
+          <a
+            href="https://www.linkedin.com/in/aisaacnsoto/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <div class="contact__item">
+              <i class="fab fa-linkedin-in"></i>
+              <p>Contáctame</p>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="container">
+        <p>
+          Copyright © 2022. <a href="#">@aisaacnsoto</a> <br />
+          All Rights Reserved
+        </p>
+      </div>
+    </footer>
+    <script async src="./index.js"></script>
+  </body>
+</html>
